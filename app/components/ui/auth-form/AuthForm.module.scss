@@ -1,0 +1,248 @@
+.auth {
+  &__button {
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #4db82d;
+    background: #e3ffdb;
+    border-radius: 15px;
+    padding: 26px 88px 28px;
+    gap: 10px;
+    border: none;
+  }
+
+  &__role {
+    &__register {
+      padding: 32px 42px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #026bcb;
+      border: none;
+      background: #e1f0ff;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+
+  &__swap {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #026bcb;
+  }
+
+  &__footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__login {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #171717;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 34px;
+  }
+
+  &__modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    z-index: 99;
+  }
+
+  &__register {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #4db82d;
+    padding: 17px 32px 21px 32px;
+    border: none;
+    background: #e3ffdb;
+    cursor: pointer;
+    margin-right: 26px;
+  }
+
+  &__form {
+    position: absolute;
+    width: 538px;
+    height: 570px;
+    background: #ffffff;
+
+    &__input {
+      &__roles {
+        margin-bottom: 30px;
+        gap: 20px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        &__role {
+          input {
+            display: none;
+
+            & + label > .auth__form__input__roles__role__item {
+              cursor: pointer;
+              padding: 18px 25px 20px;
+              border: 1px solid #d1d1d1;
+              border-radius: 22px;
+
+              p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 130%;
+                color: #878787;
+              }
+            }
+
+            &:checked + label > .auth__form__input__roles__role__item {
+              background: #e4ffed;
+              border: 1px solid #2cc961;
+              border-radius: 22px;
+
+              p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 130%;
+                color: #2cc961;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__title {
+      margin-top: 40px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 140%;
+      color: #171717;
+    }
+  }
+}
+
+.input {
+  border: 1px solid #d1d1d1;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 438px;
+  height: 85px;
+  margin: 30px auto 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+  }
+
+  input {
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 130%;
+      color: #878787;
+    }
+  }
+
+  label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #878787;
+  }
+}
+@media (max-width: 1120px) {
+  .auth {
+    &__role {
+      &__register {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .auth {
+    &__role {
+      &__register {
+        padding: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .auth {
+    &__register {
+      font-size: 16px;
+      padding: 17px 12px 21px 12px;
+    }
+    &__login {
+      font-size: 16px;
+      margin-right: 0px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .auth {
+    &__form {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .auth {
+    &__role {
+      &__register {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+    &__register {
+      margin-right: 10px;
+    }
+    &__button {
+      width: 90%;
+      padding: 28px;
+    }
+  }
+}

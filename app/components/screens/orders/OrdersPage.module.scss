@@ -1,0 +1,35 @@
+.orders {
+  &__container {
+    max-width: 1285px;
+    margin: 0 auto;
+  }
+  &__content {
+    &__orders {
+      display: flex;
+      &__content {
+        width: 948px;
+        border-right: 1px solid #eeeeee;
+        padding-right: 18px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 1350px) {
+  .orders {
+    &__container {
+      padding-left: 20px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .orders {
+    &__content {
+      &__orders {
+        &__content {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

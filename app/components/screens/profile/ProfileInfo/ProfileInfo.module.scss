@@ -1,0 +1,513 @@
+.profile {
+  &__header {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+
+      &__left {
+        display: flex;
+
+        &__photo {
+          display: flex;
+          flex-direction: column;
+
+          img {
+            border-radius: 12px;
+            object-fit: cover;
+          }
+
+          button {
+            margin-top: 20px;
+            background: #4db82d;
+            border-radius: 8px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: #ffffff;
+            border: none;
+            height: 40px;
+            margin-bottom: 20px;
+            cursor: pointer;
+          }
+        }
+
+        &__desc {
+          margin-left: 40px;
+
+          &__name {
+            display: flex;
+            align-items: center;
+
+            h3 {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 36px;
+              line-height: 140%;
+              color: #171717;
+              margin-right: 15px;
+            }
+          }
+
+          &__verify {
+            padding: 0;
+            margin-top: 13px;
+          }
+
+          &__edit {
+            margin-top: 13px;
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            margin-left: 18px;
+          }
+
+          &__profession {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 150%;
+            color: #026bcb;
+            margin-top: 10px;
+          }
+
+          &__container {
+            align-items: center;
+            display: flex;
+          }
+
+          &__rating {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            &__stats {
+              display: flex;
+            }
+            &__review {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 140%;
+              color: #4db82d;
+              margin-left: 15px;
+            }
+
+            &__stars {
+              justify-content: space-between;
+              display: flex;
+              max-width: 138px;
+
+              &__star {
+                margin-right: 12px;
+
+                svg {
+                  margin: 0;
+                }
+              }
+            }
+
+            &__register {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 140%;
+              color: #545454;
+              display: flex;
+              align-items: center;
+
+              svg {
+                margin-right: 10px;
+              }
+
+              p {
+                margin-right: 40px;
+              }
+            }
+          }
+
+          &__country {
+            margin-top: 18px;
+            margin-left: 40px;
+            align-items: center;
+            display: flex;
+
+            p {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 140%;
+              color: #545454;
+              margin-left: 10px;
+            }
+          }
+
+          &__status {
+            margin-top: 19px;
+            display: flex;
+            align-items: center;
+
+            p {
+              margin-left: 10px;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 140%;
+              color: #545454;
+            }
+          }
+        }
+      }
+
+      &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__change {
+          width: 263px;
+          background: #026bcb;
+          border-radius: 8px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+          color: #ffffff;
+          border: none;
+          height: 70px;
+          margin-bottom: 20px;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        &__update {
+          width: 263px;
+          background: #4db82d;
+          border-radius: 8px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+          border: none;
+          height: 70px;
+          margin-bottom: 20px;
+          text-decoration: none;
+        }
+
+        &__zakaz {
+          width: 263px;
+          background: #4db82d;
+          border-radius: 8px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center;
+          color: #ffffff;
+          border: none;
+          height: 70px;
+          margin-bottom: 20px;
+        }
+
+        &__zakazhik {
+          width: 263px;
+          background: #e1f0ff;
+          border-radius: 8px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center;
+          color: #026bcb;
+          border: none;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1350px) {
+  .profile {
+    &__header {
+      &__content {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .profile {
+    &__header {
+      &__content {
+        align-items: center;
+        &__right {
+          &__update {
+            width: 200px;
+            text-align: center;
+          }
+          &__change {
+            width: 200px;
+          }
+        }
+        &__left {
+          align-items: center;
+          &__photo {
+            img {
+              width: 150px;
+              height: 150px;
+            }
+          }
+          &__desc {
+            &__name {
+              h3 {
+                font-size: 30px;
+              }
+            }
+            &__profession {
+              font-size: 24px;
+            }
+            &__status {
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 975px) {
+  .profile {
+    &__header {
+      &__content {
+        align-items: center;
+        &__right {
+          &__update {
+            width: 150px;
+            text-align: center;
+          }
+          &__change {
+            width: 150px;
+          }
+        }
+        &__left {
+          align-items: center;
+          &__photo {
+            img {
+              width: 125px;
+              height: 125px;
+            }
+          }
+          &__desc {
+            &__name {
+              h3 {
+                font-size: 26px;
+              }
+            }
+            &__profession {
+              font-size: 20px;
+            }
+            &__status {
+              p {
+                font-size: 16px;
+              }
+            }
+            &__country {
+              p {
+                font-size: 16px;
+              }
+            }
+            &__rating {
+              &__register {
+                p {
+                  font-size: 16px;
+                }
+              }
+              &__review {
+                font-size: 16px;
+                margin-left: 5px;
+              }
+              &__stars {
+                &__star {
+                  margin-right: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 825px) {
+  .profile {
+    &__header {
+      display: flex;
+      flex-direction: column;
+      &__content {
+        display: inline;
+        &__right {
+          flex-direction: inherit;
+          justify-content: center;
+          &__update {
+            width: 150px;
+            text-align: center;
+            margin-right: 75px;
+            font-size: 16px;
+          }
+          &__change {
+            width: 150px;
+            font-size: 16px;
+            margin-left: 75px;
+          }
+        }
+        &__left {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          &__photo {
+            margin-bottom: 10px;
+            img {
+              width: 175px;
+              height: 175px;
+            }
+          }
+          &__desc {
+            margin-left: 0;
+            &__name {
+              h3 {
+                font-size: 26px;
+              }
+            }
+            &__profession {
+              font-size: 20px;
+            }
+            &__status {
+              p {
+                font-size: 16px;
+              }
+            }
+            &__country {
+              p {
+                font-size: 16px;
+              }
+            }
+            &__rating {
+              &__register {
+                p {
+                  font-size: 16px;
+                }
+              }
+              &__review {
+                font-size: 16px;
+                margin-left: 5px;
+              }
+              &__stars {
+                &__star {
+                  margin-right: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .profile {
+    &__header {
+      display: flex;
+      flex-direction: column;
+      &__content {
+        display: inline;
+        padding: 0 10px;
+        &__right {
+          flex-direction: inherit;
+          justify-content: space-between;
+          &__update {
+            width: 175px;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            margin: 0;
+          }
+          &__change {
+            margin: 0;
+            width: 175px;
+            padding: 10px;
+            font-size: 20px;
+          }
+        }
+        &__left {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          &__photo {
+            margin-bottom: 10px;
+            img {
+              width: 175px;
+              height: 175px;
+            }
+          }
+          &__desc {
+            margin-left: 0;
+            &__container {
+              align-items: baseline;
+              flex-direction: column;
+            }
+            &__name {
+              h3 {
+                font-size: 28px;
+              }
+            }
+            &__profession {
+              font-size: 24px;
+            }
+            &__status {
+              p {
+                font-size: 20px;
+              }
+            }
+            &__country {
+              margin: 0;
+              margin-top: 15px;
+              p {
+                font-size: 20px;
+              }
+            }
+            &__rating {
+              flex-direction: column;
+              align-items: baseline;
+              &__register {
+                margin-bottom: 10px;
+                p {
+                  font-size: 20px;
+                }
+              }
+              &__review {
+                font-size: 20px;
+                margin-left: 5px;
+              }
+              &__stats {
+                display: flex;
+                align-items: center;
+              }
+              &__stars {
+                &__star {
+                  margin-right: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

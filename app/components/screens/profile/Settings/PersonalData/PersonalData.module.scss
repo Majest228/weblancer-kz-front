@@ -1,0 +1,160 @@
+.PersonalData {
+  &__line {
+    width: 100%;
+    height: 1px;
+    background: #eeeeee;
+  }
+  &__content {
+    max-width: 1276px;
+    margin: 0 auto;
+    &__title {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      h3 {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 140%;
+        color: #171717;
+      }
+    }
+    &__block {
+      display: flex;
+      &__left {
+        width: 326px;
+        padding-top: 30px;
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          li {
+            margin-top: 15px;
+            &:first-child {
+              margin-top: 0;
+            }
+            a {
+              text-decoration: none;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 150%;
+              color: #026bcb;
+            }
+          }
+        }
+        &__hide {
+          transform: rotate(-90deg);
+          height: 30px;
+          width: 30px;
+          display: none;
+        }
+      }
+      &__right {
+        width: 100%;
+        border-left: 1px solid #eeeeee;
+        padding: 40px;
+        &__user {
+          margin-bottom: 40px;
+        }
+        &__input {
+          margin-top: 55px;
+          margin-bottom: 55px;
+          input {
+            width: 100%;
+            height: 54px;
+            border: 1px solid #d1d1d1;
+            border-radius: 15px;
+            padding-left: 20px;
+          }
+        }
+        &__editor {
+          margin-bottom: 120px;
+        }
+        &__submit {
+          margin-top: 40px;
+          button {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 130%;
+            color: #2cc961;
+            padding: 15px 21px;
+            background: #e4ffed;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .PersonalData {
+    &__content {
+      &__title {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      &__block {
+        position: relative;
+        &__left {
+          z-index: 100;
+          position: fixed;
+          left: 0;
+          top: 30%;
+          width: 0;
+          padding: 0;
+          ul {
+            display: none;
+          }
+          .showed {
+            transform: rotate(90deg);
+            left: 245px;
+            top: -240px;
+            svg {
+              fill: #ffffff;
+            }
+          }
+          &__hide {
+            display: block;
+            position: relative;
+          }
+        }
+        .showed {
+          ul {
+            padding: 20px;
+            display: block;
+            border-radius: 12px;
+            background: #4db82d;
+            li {
+              a {
+                color: #ffffff;
+              }
+            }
+            height: 100%;
+            width: 280px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .PersonalData {
+    &__content {
+      &__title {
+        h3 {
+          font-size: 34px;
+        }
+      }
+      &__block {
+        &__right {
+          &__editor {
+            margin-bottom: 160px;
+          }
+          &__submit {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

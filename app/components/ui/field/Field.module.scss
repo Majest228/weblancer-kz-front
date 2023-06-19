@@ -1,0 +1,39 @@
+.input {
+  border: 1px solid #d1d1d1;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 438px;
+  height: 85px;
+  margin: 30px auto 0;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+  }
+  input {
+    border: none;
+    outline: none;
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 130%;
+      color: #878787;
+    }
+  }
+  label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #878787;
+  }
+}
+@media (max-width: 550px) {
+  .input {
+    width: 90%;
+  }
+}

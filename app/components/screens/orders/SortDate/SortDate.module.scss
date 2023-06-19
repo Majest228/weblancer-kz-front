@@ -1,0 +1,42 @@
+.date {
+  &__content {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      white-space: nowrap;
+      li {
+        list-style: none;
+        cursor: pointer;
+        padding-right: 40px;
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: #878787;
+          &::selection {
+            background: transparent;
+          }
+        }
+        .top {
+          color: #026bcb;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .date {
+    &__content {
+      ul {
+        li {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}

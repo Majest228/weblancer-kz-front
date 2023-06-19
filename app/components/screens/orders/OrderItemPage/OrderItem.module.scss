@@ -1,0 +1,33 @@
+.orderItem {
+  margin: 0 auto;
+
+  &__body {
+    max-width: 1286px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__left {
+    max-width: 950px;
+    padding-bottom: 40px;
+    border-right: 1px solid #EEEEEE;
+  }
+
+  &__response {
+    padding-top: 40px;
+    &__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 150%;
+      color: #171717;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      color: #171717;
+    }
+  }
+}
